@@ -1,0 +1,81 @@
+/* Resume.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+.bg {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 30px 40px;
+  max-width: 800px;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'Space Mono', monospace;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.h2 {
+  font-size: 1.6rem;
+  color: #007acc;
+  border-bottom: 3px solid #007acc;
+  padding-bottom: 5px;
+  margin-top: 25px; /* Add some space above headings */
+  margin-bottom: 15px; /* Add some space below headings */
+}
+
+.p {
+  margin-top: 0.5em; /* Default top margin for paragraphs */
+  margin-bottom: 0.5em; /* Default bottom margin for paragraphs */
+  line-height: 1.5; /* Improve readability */
+}
+
+.a {
+  color: #007acc;
+  text-decoration: none;
+  margin: 0 5px; /* Add slight horizontal spacing around links */
+}
+
+.a:hover {
+  color: #005b99;
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.ul {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+  margin-top: 5px; /* Reduce space above lists */
+}
+
+.li {
+  margin-bottom: 15px; /* Space between main list items (Education, Experience entries) */
+}
+
+.li .ul { /* Nested lists (like bullet points under Experience) */
+  list-style-type: disc; /* Use bullets for nested items */
+  padding-left: 20px; /* Indent nested items */
+  margin-top: 5px; /* Space above nested list */
+}
+
+.li .ul .li { /* List items within nested lists */
+   margin-bottom: 5px; /* Smaller space between nested bullet points */
+}
+
+.strong {
+  font-weight: 700; /* Ensure strong tag is bold */
+}
+
+/* --- FIX FOR EDUCATION SPACING --- */
+/* Target the paragraphs directly inside the main list items */
+.li > .p {
+  margin-top: 4px; /* Reduce space above the degree/date lines */
+  margin-bottom: 4px; /* Reduce space below the degree/date lines */
+}
+/* Optional: Specifically target the first p after the strong tag if needed */
+/* .li > strong + .p {
+  margin-top: 2px;
+} */
+/* --------------------------------- */
