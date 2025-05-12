@@ -17,7 +17,7 @@ const Resume: React.FC = () => {
       <ul className={styles.ul}>
         <li className={styles.li}>
           <strong className={styles.strong}>Indian Institute of Technology, Madras</strong>, Chennai, India
-          <p className={styles.p}>Bachelor of Science in Data Science and Applications, CGPA: 8.9</p>
+          <p className={styles.p}>Bachelor of Science in Data Science and Applications, CGPA: 8.3</p>
           <p className={styles.p}>Jan 2021 – 2024 May</p>
         </li>
         <li className={styles.li}>
@@ -30,7 +30,17 @@ const Resume: React.FC = () => {
       <h2 className={styles.h2}>Experience</h2>
       <ul className={styles.ul}>
         <li className={styles.li}>
-          <strong className={styles.strong}>Software Engineer, Data Science</strong> (July 2023 – Present)
+          <strong className={styles.strong}>Software Engineer, Data Science</strong> (May 2024 – Present)
+          <p className={styles.p}><em>Fiery (formerly EFI)</em>, Bengaluru, India</p>
+          <ul className={styles.ul}>
+            <li className={styles.li}>Built a full-stack NLP-based print job system with Angular frontend, Node.js backend, and LLaMA 3.1 via vLLM for structured job ticket generation.</li>
+            <li className={styles.li}>Integrated function calling and custom post-processing to extract print parameters and reduce model hallucinations.</li>
+            <li className={styles.li}>Enabled email-based job submission via AWS SES and Lambda.</li>
+            <li className={styles.li}>Created "AskDB," a natural language interface for internal database querying.</li>
+          </ul>
+        </li>
+        <li className={styles.li}>
+          <strong className={styles.strong}>Associate Software Engineer, Data Science</strong> (July 2023 – May 2024)
           <p className={styles.p}><em>Fiery (formerly EFI)</em>, Bengaluru, India</p>
           <ul className={styles.ul}>
             <li className={styles.li}>Developed an app to detect TV ads using audio fingerprinting.</li>
